@@ -5,7 +5,7 @@ services:
     container_name: insurgency-sandstorm
     restart: unless-stopped
     env_file:
-       - envexample
+       - .env
     volumes:
       - $HOME/apop-insurg/config/ini:/home/steam/steamcmd/sandstorm/Insurgency/Saved/Config/LinuxServer:ro
       - $HOME/apop-insurg/config/txt:/home/steam/steamcmd/sandstorm/Insurgency/Config/Server:ro
