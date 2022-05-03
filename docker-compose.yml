@@ -7,9 +7,9 @@ services:
     env_file:
        - .env
     volumes:
-      - $HOME/apop-insurg/config/ini:/home/steam/steamcmd/sandstorm/Insurgency/Saved/Config/LinuxServer:ro
-      - $HOME/apop-insurg/config/txt:/home/steam/steamcmd/sandstorm/Insurgency/Config/Server:ro
-      - $HOME/coop-modmap/Mods:/home/steam/steamcmd/sandstorm/Insurgency/Mods:rw
+      - $HOME/apop-insurg/ini:/home/steam/steamcmd/sandstorm/Insurgency/Saved/Config/LinuxServer:ro
+      - $HOME/apop-insurg/txt:/home/steam/steamcmd/sandstorm/Insurgency/Config/Server:ro
+      - /home/apop/coop-modmap/Mods:/home/steam/steamcmd/sandstorm/Insurgency/Mods:rw
     ports:
       - "${PORT}:${PORT}/udp"
       - "${QUERYPORT}:${QUERYPORT}/udp"
